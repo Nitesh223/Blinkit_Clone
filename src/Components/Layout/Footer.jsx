@@ -111,7 +111,7 @@ const Footer = () => {
                         {[
                             { icon: <FaFacebookF />, link: "#" },
                             { icon: <FaXTwitter />, link: "#" },
-                            { icon: <FaInstagram />, link: "#" },
+                            { icon: <FaInstagram />, link: "" },
                             { icon: <FaLinkedinIn />, link: "#" },
                             { icon: <FaGlobe />, link: "#" },
                         ].map((item, index) => (
