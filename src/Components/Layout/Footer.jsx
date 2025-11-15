@@ -95,25 +95,28 @@ const Footer = () => {
 
                     <div className="flex items-center gap-4">
                         <span className="font-semibold text-gray-800">Download App</span>
-                        <img
-                            src="https://blinkit.com/8ed033800ea38f24c4f0.png"
-                            alt="App Store"
-                            className="h-9 cursor-pointer"
-                        />
-                        <img
+                        <a href="https://play.google.com/store/apps/details?id=com.grofers.customerapp">
+                            <img
+                                src="https://blinkit.com/8ed033800ea38f24c4f0.png"
+                                alt="App Store"
+                                className="h-9 cursor-pointer"
+                            />
+                        </a>
+                        <a href="https://apps.apple.com/in/app/blinkit-grocery-in-10-minutes/id960335206#productRatings"> <img
                             src="https://blinkit.com/d61019073b700ca49d22.png"
                             alt="Google Play"
                             className="h-9 cursor-pointer"
                         />
+                        </a>
                     </div>
 
                     <div className="flex items-center gap-3">
                         {[
-                            { icon: <FaFacebookF />, link: "#" },
-                            { icon: <FaXTwitter />, link: "#" },
-                            { icon: <FaInstagram />, link: "" },
-                            { icon: <FaLinkedinIn />, link: "#" },
-                            { icon: <FaGlobe />, link: "#" },
+                            { icon: <FaFacebookF />, link: "https://www.facebook.com/share/17qA88FVxi/" },
+                            { icon: <FaXTwitter />, link: "https://x.com/letsblinkit?lang=en" },
+                            { icon: <FaInstagram />, link: "https://www.instagram.com/letsblinkit?igsh=end1aWRodXFxaGlh" },
+                            { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/company/letsblinkit/" },
+                            { icon: <FaGlobe />, link: "https://en.wikipedia.org/wiki/Blinkit" },
                         ].map((item, index) => (
                             <a
                                 key={index}

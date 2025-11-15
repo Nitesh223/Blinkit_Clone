@@ -1,10 +1,13 @@
 import React from 'react'
+import { useState } from 'react';
 import { IoSearchOutline, IoLocationSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import logo from '../../assets/logo.png'
+import LoginModal from '../../Pages/Login';
 
 
-const Header = () => {
+const Header = ({ onLoginClick }) => {
+    const [showLogin, setshowLogin] = useState(false)
     return (
         <>
             <nav className='w-full bg-white shadow-xs sticky top-0 z-50 border-y border-gray-100 h-22 box-border'>
@@ -31,13 +34,14 @@ const Header = () => {
                         {/* <div className="bg-[#f8f8f8] flex justify-center items-center">
                             <input type="text" placeholder='Search' className='border-2'/>
                         </div> */}
-                        <div className='text-lg my-auto font-semibold  cursor-pointer'>
-                            <h2>Login</h2>
+                        <div className='text-lg my-auto font-semibold  cursor-pointer hover:font-bold'>
+                            <h2 onClick={() => setshowLogin(true)} >Login</h2>
                         </div>
+                        {showLogin && <LoginModal closeModal={() => setshowLogin(false)} />}
                     </div>
 
                     <div className="w-[15%] h-full flex items-center justify-center">
-                        <button className="flex items-center gap-2 bg-green-700 text-white px-6 py-3 rounded-md font-semibold text-sm shadow-sm  cursor-pointer">
+                        <button className="flex items-center gap-2 bg-green-700 hover:bg-green-600  text-white px-6 py-3 rounded-md font-semibold text-sm shadow-sm  cursor-pointer">
                             <FaShoppingCart />
                             My Cart
                         </button>
