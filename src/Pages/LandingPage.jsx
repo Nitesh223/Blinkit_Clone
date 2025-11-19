@@ -7,6 +7,12 @@ import cardimg2 from '../assets/cardimage/pet care.png'
 import cardimg3 from '../assets/cardimage/diaper.png'
 
 import { categories } from "../Data/Categories"
+import DairySection from '../Components/Layout/DairySection'
+import SnacksSection from '../Components/Layout/SnacksSection'
+import MouthFreshner from '../Components/Layout/MouthFreshner'
+import TobaccoSection from '../Components/Layout/TobaccoSection'
+import ColdDrinkSection from '../Components/Layout/ColdDrinkSection'
+import CandiesSection from '../Components/Layout/CandiesSection'
 
 
 const LandingPage = () => {
@@ -40,6 +46,12 @@ const LandingPage = () => {
           ))}
         </div>
       </div>
+      <DairySection/>
+      <SnacksSection/>
+      <MouthFreshner/>
+      <TobaccoSection/>
+      <ColdDrinkSection/>
+      <CandiesSection/>
       <Footer />
     </>
   )

@@ -34,7 +34,6 @@ const LoginModal = ({ closeModal }) => {
                     Continue
                 </button>
 
-                {/* Terms */}
                 <p className="text-center text-gray-600 text-xs mt-4">
                     By continuing, you agree to our{" "}
                     <span className="underline cursor-pointer">Terms of service</span> &
